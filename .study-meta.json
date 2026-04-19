@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "managedBy": "repo-study",
+  "sourceRepo": "jackwener/opencli",
+  "sourceUrl": "https://github.com/jackwener/opencli",
+  "cloneDepth": 1,
+  "commitSha": "1ecbf7a17cc0654b78e51ae28847bc78c94e319b",
+  "createdAt": "2026-04-20",
+  "lastUpdated": "2026-04-20",
+  "topics": [],
+  "notes": [
+    "notes/ 目录用于存放研究笔记",
+    "首次研究将自动生成导读指南"
+  ]
+}
