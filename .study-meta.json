@@ -7,9 +7,22 @@
   "commitSha": "1ecbf7a17cc0654b78e51ae28847bc78c94e319b",
   "createdAt": "2026-04-20",
   "lastUpdated": "2026-04-20",
-  "topics": [],
-  "notes": [
-    "notes/ 目录用于存放研究笔记",
-    "首次研究将自动生成导读指南"
-  ]
+  "topics": [
+    {
+      "name": "整体架构与核心设计",
+      "progress": "completed",
+      "notes": ["notes/01-architecture.md"]
+    },
+    {
+      "name": "AI Agent 集成机制",
+      "progress": "completed",
+      "notes": ["notes/02-ai-agent-integration.md"]
+    },
+    {
+      "name": "CLI 转换引擎",
+      "progress": "completed",
+      "notes": ["notes/03-cli-transform-engine.md"]
+    }
+  ],
+  "guide": "notes/opencli-guide.md"
 }
