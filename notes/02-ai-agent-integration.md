@@ -1,3 +1,11 @@
+---
+article_id: OBA-kv6o2qtx
+tags: [study-note]
+type: note
+created_at: 2026-04-25
+updated_at: 2026-04-25
+---
+
 # OpenCLI AI Agent 集成机制
 
 > 研究 OpenCLI 如何让 AI Agent 发现、学习和执行工具

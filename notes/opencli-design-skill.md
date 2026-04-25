@@ -1,4 +1,5 @@
 ---
+article_id: OBA-7l53aosl
 tags: [skill-template, cli-framework, adapter-pattern, pipeline, browser-automation]
 created: 2026-04-20
 source: jackwener/opencli

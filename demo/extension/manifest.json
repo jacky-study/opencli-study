@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "OpenCLI Mini Bridge",
+  "version": "1.0",
+  "description": "最小化演示：接收 Daemon 命令，在浏览器里执行",
+  "permissions": ["tabs", "scripting", "debugger"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

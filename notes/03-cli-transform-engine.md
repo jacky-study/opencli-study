@@ -1,3 +1,11 @@
+---
+article_id: OBA-ss4arkds
+tags: [study-note]
+type: note
+created_at: 2026-04-25
+updated_at: 2026-04-25
+---
+
 # OpenCLI CLI 转换引擎
 
 > 研究如何将网站、Electron 应用、本地二进制转化为标准化 CLI 接口

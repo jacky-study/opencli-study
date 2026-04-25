@@ -1,3 +1,11 @@
+---
+article_id: OBA-88dvprll
+tags: [study-note]
+type: note
+created_at: 2026-04-25
+updated_at: 2026-04-25
+---
+
 # OpenCLI 整体架构与核心设计
 
 > 研究 OpenCLI 项目的整体架构、核心设计模式、技术栈和代码质量

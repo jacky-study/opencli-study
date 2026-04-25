@@ -1,4 +1,5 @@
 ---
+article_id: OBA-azmrdfhz
 tags: [opencli, cli, ai-agent, browser-automation]
 created: 2026-04-20
 ---

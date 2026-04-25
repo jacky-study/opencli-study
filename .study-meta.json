@@ -1,28 +1,176 @@
 {
-  "version": 2,
-  "managedBy": "repo-study",
+  "schemaVersion": "2.0",
+  "managedBy": {
+    "skill": "repo-study",
+    "createdBySkill": true,
+    "createdAt": "2026-04-20T00:30:00+08:00"
+  },
   "sourceRepo": "jackwener/opencli",
   "sourceUrl": "https://github.com/jackwener/opencli",
   "cloneDepth": 1,
-  "commitSha": "1ecbf7a17cc0654b78e51ae28847bc78c94e319b",
-  "createdAt": "2026-04-20",
-  "lastUpdated": "2026-04-20",
+  "repo": {
+    "name": "opencli",
+    "url": "https://github.com/jackwener/opencli.git",
+    "githubUrl": "https://github.com/jackwener/opencli",
+    "owner": "jackwener",
+    "branch": "main",
+    "commitSha": "1ecbf7a17cc0654b78e51ae28847bc78c94e319b"
+  },
   "topics": [
     {
+      "id": "architecture-core-design",
       "name": "整体架构与核心设计",
-      "progress": "completed",
-      "notes": ["notes/01-architecture.md"]
+      "category": "architecture",
+      "tags": [
+        "architecture",
+        "core-design"
+      ],
+      "state": "active",
+      "progress": {
+        "questionCount": 1,
+        "noteCount": 1,
+        "guideCount": 0,
+        "skillTemplateCount": 0,
+        "runnableSkillCount": 0,
+        "lastActivityAt": "2026-04-20T00:37:00+08:00"
+      },
+      "questions": [],
+      "artifacts": [
+        {
+          "type": "note",
+          "path": "notes/01-architecture.md",
+          "createdAt": "2026-04-20T00:37:00+08:00"
+        }
+      ],
+      "skillPackaging": {
+        "hasSkillTemplate": false,
+        "hasRunnableSkill": false
+      }
     },
     {
+      "id": "ai-agent-integration",
       "name": "AI Agent 集成机制",
-      "progress": "completed",
-      "notes": ["notes/02-ai-agent-integration.md"]
+      "category": "integration",
+      "tags": [
+        "ai-agent",
+        "integration"
+      ],
+      "state": "active",
+      "progress": {
+        "questionCount": 1,
+        "noteCount": 1,
+        "guideCount": 0,
+        "skillTemplateCount": 0,
+        "runnableSkillCount": 0,
+        "lastActivityAt": "2026-04-20T00:37:00+08:00"
+      },
+      "questions": [],
+      "artifacts": [
+        {
+          "type": "note",
+          "path": "notes/02-ai-agent-integration.md",
+          "createdAt": "2026-04-20T00:37:00+08:00"
+        }
+      ],
+      "skillPackaging": {
+        "hasSkillTemplate": false,
+        "hasRunnableSkill": false
+      }
     },
     {
+      "id": "cli-transform-engine",
       "name": "CLI 转换引擎",
-      "progress": "completed",
-      "notes": ["notes/03-cli-transform-engine.md"]
+      "category": "engine",
+      "tags": [
+        "cli",
+        "transform"
+      ],
+      "state": "active",
+      "progress": {
+        "questionCount": 1,
+        "noteCount": 1,
+        "guideCount": 0,
+        "skillTemplateCount": 0,
+        "runnableSkillCount": 0,
+        "lastActivityAt": "2026-04-20T00:37:00+08:00"
+      },
+      "questions": [],
+      "artifacts": [
+        {
+          "type": "note",
+          "path": "notes/03-cli-transform-engine.md",
+          "createdAt": "2026-04-20T00:37:00+08:00"
+        }
+      ],
+      "skillPackaging": {
+        "hasSkillTemplate": false,
+        "hasRunnableSkill": false
+      }
+    },
+    {
+      "id": "browser-wakeup-and-compare",
+      "name": "真实浏览器唤起与方案对比（Web Access vs Midscene）",
+      "category": "comparison",
+      "tags": [
+        "browser",
+        "comparison"
+      ],
+      "state": "active",
+      "progress": {
+        "questionCount": 1,
+        "noteCount": 1,
+        "guideCount": 0,
+        "skillTemplateCount": 0,
+        "runnableSkillCount": 0,
+        "lastActivityAt": "2026-04-21T00:52:00+08:00"
+      },
+      "questions": [],
+      "artifacts": [
+        {
+          "type": "note",
+          "path": "notes/04-real-browser-wakeup-and-web-access-vs-midscene.md",
+          "createdAt": "2026-04-21T00:52:00+08:00"
+        }
+      ],
+      "skillPackaging": {
+        "hasSkillTemplate": false,
+        "hasRunnableSkill": false
+      }
+    },
+    {
+      "id": "opencli-design-skill-template",
+      "name": "OpenCLI 设计模式 Skill 模板",
+      "category": "skill-design",
+      "tags": [
+        "skill",
+        "template"
+      ],
+      "state": "active",
+      "progress": {
+        "questionCount": 1,
+        "noteCount": 0,
+        "guideCount": 0,
+        "skillTemplateCount": 1,
+        "runnableSkillCount": 0,
+        "lastActivityAt": "2026-04-20T00:40:00+08:00"
+      },
+      "questions": [],
+      "artifacts": [
+        {
+          "type": "skill_template",
+          "path": "notes/opencli-design-skill.md",
+          "createdAt": "2026-04-20T00:40:00+08:00"
+        }
+      ],
+      "skillPackaging": {
+        "hasSkillTemplate": true,
+        "hasRunnableSkill": false
+      }
     }
   ],
-  "guide": "notes/opencli-guide.md"
+  "guide": "notes/opencli-guide.md",
+  "timestamps": {
+    "createdAt": "2026-04-20T00:30:00+08:00",
+    "lastUpdated": "2026-04-21T00:52:00+08:00"
+  }
 }

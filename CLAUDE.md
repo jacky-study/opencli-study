@@ -29,4 +29,21 @@ opencli-study/
 
 ## 笔记索引
 
-> 研究笔记将存放在 notes/ 目录，完成后更新此索引。
+- [01 - 整体架构概览](notes/01-architecture.md)
+- [02 - AI Agent 集成](notes/02-ai-agent-integration.md)
+- [03 - CLI 转换引擎](notes/03-cli-transform-engine.md)
+- [04 - 真实浏览器唤起机制 + Web Access vs Midscene](notes/04-real-browser-wakeup-and-web-access-vs-midscene.md)
+- [05 - 浏览器桥接机制](notes/05-opencli-browser-bridge-mechanism.md)
+- [08 - OpenCLI 使用指南（HOW-TO-USE）](notes/08-opencli-how-to-use-guide.md)
+
+<!-- ob-index:start -->
+## Obsidian 知识库
+
+> 索引路径：`/Users/jiashengwang/jacky-github/jacky-obsidian/wiki/open-source/opencli-study/index.md`
+> 渐进式加载：先读本概览，需要详情时读取索引文件，再读取具体文章。
+
+| 文件 | 主题 | 何时读取 |
+|------|------|----------|
+| 06-browser-bridge-csp-troubleshooting.md | CSP 三层限制与排查 | 遇到 Chrome 扩展 CSP 限制时 |
+| 07-opencli-demo-development-lessons.md | Demo 开发经验与教训 | 需要参考开发调试经验时 |
+<!-- ob-index:end -->
