@@ -8,31 +8,29 @@
   "sourceRepo": "jackwener/opencli",
   "sourceUrl": "https://github.com/jackwener/opencli",
   "cloneDepth": 1,
+  "surveyState": "completed",
   "repo": {
     "name": "opencli",
     "url": "https://github.com/jackwener/opencli.git",
     "githubUrl": "https://github.com/jackwener/opencli",
     "owner": "jackwener",
     "branch": "main",
-    "commitSha": "1ecbf7a17cc0654b78e51ae28847bc78c94e319b"
+    "commitSha": "54ffc882837e01acddb710b8dee69825cc442a64"
   },
   "topics": [
     {
       "id": "architecture-core-design",
       "name": "整体架构与核心设计",
       "category": "architecture",
-      "tags": [
-        "architecture",
-        "core-design"
-      ],
+      "tags": ["architecture", "core-design"],
       "state": "active",
       "progress": {
-        "questionCount": 1,
-        "noteCount": 1,
-        "guideCount": 0,
+        "questionCount": 2,
+        "noteCount": 2,
+        "guideCount": 1,
         "skillTemplateCount": 0,
         "runnableSkillCount": 0,
-        "lastActivityAt": "2026-04-20T00:37:00+08:00"
+        "lastActivityAt": "2026-04-27T12:00:00+08:00"
       },
       "questions": [],
       "artifacts": [
@@ -40,6 +38,16 @@
           "type": "note",
           "path": "notes/01-architecture.md",
           "createdAt": "2026-04-20T00:37:00+08:00"
+        },
+        {
+          "type": "note",
+          "path": "explorer/01-opencli-architecture-and-core-design.md",
+          "createdAt": "2026-04-27T12:00:00+08:00"
+        },
+        {
+          "type": "guide",
+          "path": "explorer/opencli-guide.md",
+          "createdAt": "2026-04-27T12:00:00+08:00"
         }
       ],
       "skillPackaging": {
@@ -51,10 +59,7 @@
       "id": "ai-agent-integration",
       "name": "AI Agent 集成机制",
       "category": "integration",
-      "tags": [
-        "ai-agent",
-        "integration"
-      ],
+      "tags": ["ai-agent", "integration"],
       "state": "active",
       "progress": {
         "questionCount": 1,
@@ -81,10 +86,7 @@
       "id": "cli-transform-engine",
       "name": "CLI 转换引擎",
       "category": "engine",
-      "tags": [
-        "cli",
-        "transform"
-      ],
+      "tags": ["cli", "transform"],
       "state": "active",
       "progress": {
         "questionCount": 1,
@@ -111,10 +113,7 @@
       "id": "browser-wakeup-and-compare",
       "name": "真实浏览器唤起与方案对比（Web Access vs Midscene）",
       "category": "comparison",
-      "tags": [
-        "browser",
-        "comparison"
-      ],
+      "tags": ["browser", "comparison"],
       "state": "active",
       "progress": {
         "questionCount": 1,
@@ -141,10 +140,7 @@
       "id": "opencli-design-skill-template",
       "name": "OpenCLI 设计模式 Skill 模板",
       "category": "skill-design",
-      "tags": [
-        "skill",
-        "template"
-      ],
+      "tags": ["skill", "template"],
       "state": "active",
       "progress": {
         "questionCount": 1,
@@ -168,9 +164,9 @@
       }
     }
   ],
-  "guide": "notes/opencli-guide.md",
+  "guide": "explorer/opencli-guide.md",
   "timestamps": {
     "createdAt": "2026-04-20T00:30:00+08:00",
-    "lastUpdated": "2026-04-21T00:52:00+08:00"
+    "lastUpdated": "2026-04-27T12:00:00+08:00"
   }
 }
