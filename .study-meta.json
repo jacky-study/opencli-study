@@ -46,8 +46,13 @@
         },
         {
           "type": "guide",
-          "path": "explorer/opencli-guide.md",
+          "path": "explorer/02-opencli-guide.md",
           "createdAt": "2026-04-27T12:00:00+08:00"
+        },
+        {
+          "type": "cheatsheet",
+          "path": "explorer/cheatsheet/architecture-cheat-sheet.md",
+          "createdAt": "2026-04-27T16:30:00+08:00"
         }
       ],
       "skillPackaging": {
@@ -162,11 +167,210 @@
         "hasSkillTemplate": true,
         "hasRunnableSkill": false
       }
+    },
+    {
+      "id": "browser-bridge-mechanism",
+      "name": "浏览器桥接机制",
+      "category": "browser",
+      "tags": ["browser", "bridge", "cdp"],
+      "state": "active",
+      "progress": {
+        "questionCount": 1,
+        "noteCount": 1,
+        "guideCount": 0,
+        "skillTemplateCount": 0,
+        "runnableSkillCount": 0,
+        "lastActivityAt": "2026-04-21T01:00:00+08:00"
+      },
+      "questions": [],
+      "artifacts": [
+        {
+          "type": "note",
+          "path": "notes/05-opencli-browser-bridge-mechanism.md",
+          "createdAt": "2026-04-21T01:00:00+08:00"
+        }
+      ],
+      "skillPackaging": {
+        "hasSkillTemplate": false,
+        "hasRunnableSkill": false
+      }
+    },
+    {
+      "id": "browser-bridge-csp-troubleshooting",
+      "name": "CSP 三层限制与排查",
+      "category": "browser",
+      "tags": ["browser", "csp", "troubleshooting"],
+      "state": "active",
+      "progress": {
+        "questionCount": 1,
+        "noteCount": 1,
+        "guideCount": 0,
+        "skillTemplateCount": 0,
+        "runnableSkillCount": 0,
+        "lastActivityAt": "2026-04-22T01:00:00+08:00"
+      },
+      "questions": [],
+      "artifacts": [
+        {
+          "type": "note",
+          "path": "notes/06-browser-bridge-csp-troubleshooting.md",
+          "createdAt": "2026-04-22T01:00:00+08:00"
+        }
+      ],
+      "skillPackaging": {
+        "hasSkillTemplate": false,
+        "hasRunnableSkill": false
+      }
+    },
+    {
+      "id": "demo-development-lessons",
+      "name": "Demo 开发经验与教训",
+      "category": "development",
+      "tags": ["demo", "development", "lessons"],
+      "state": "active",
+      "progress": {
+        "questionCount": 1,
+        "noteCount": 1,
+        "guideCount": 0,
+        "skillTemplateCount": 0,
+        "runnableSkillCount": 0,
+        "lastActivityAt": "2026-04-24T01:00:00+08:00"
+      },
+      "questions": [],
+      "artifacts": [
+        {
+          "type": "note",
+          "path": "notes/07-opencli-demo-development-lessons.md",
+          "createdAt": "2026-04-24T01:00:00+08:00"
+        }
+      ],
+      "skillPackaging": {
+        "hasSkillTemplate": false,
+        "hasRunnableSkill": false
+      }
+    },
+    {
+      "id": "how-to-use-guide",
+      "name": "OpenCLI 使用指南",
+      "category": "guide",
+      "tags": ["guide", "how-to"],
+      "state": "active",
+      "progress": {
+        "questionCount": 1,
+        "noteCount": 1,
+        "guideCount": 0,
+        "skillTemplateCount": 0,
+        "runnableSkillCount": 0,
+        "lastActivityAt": "2026-04-24T01:00:00+08:00"
+      },
+      "questions": [],
+      "artifacts": [
+        {
+          "type": "note",
+          "path": "notes/08-opencli-how-to-use-guide.md",
+          "createdAt": "2026-04-24T01:00:00+08:00"
+        }
+      ],
+      "skillPackaging": {
+        "hasSkillTemplate": false,
+        "hasRunnableSkill": false
+      }
+    },
+    {
+      "id": "browser-commands-deep-dive",
+      "name": "浏览器命令完全指南（26 条）",
+      "category": "browser",
+      "tags": ["browser", "commands", "reference"],
+      "state": "active",
+      "progress": {
+        "questionCount": 1,
+        "noteCount": 1,
+        "guideCount": 0,
+        "skillTemplateCount": 0,
+        "runnableSkillCount": 0,
+        "lastActivityAt": "2026-04-25T01:00:00+08:00"
+      },
+      "questions": [],
+      "artifacts": [
+        {
+          "type": "note",
+          "path": "notes/09-browser-commands-deep-dive.md",
+          "createdAt": "2026-04-25T01:00:00+08:00"
+        },
+        {
+          "type": "cheatsheet",
+          "path": "explorer/cheatsheet/browser-commands-cheat-sheet.md",
+          "createdAt": "2026-04-27T16:30:00+08:00"
+        }
+      ],
+      "skillPackaging": {
+        "hasSkillTemplate": false,
+        "hasRunnableSkill": false
+      }
+    },
+    {
+      "id": "auth-strategy",
+      "name": "5 层认证策略",
+      "category": "security",
+      "tags": ["auth", "security", "strategy"],
+      "state": "active",
+      "progress": {
+        "questionCount": 1,
+        "noteCount": 1,
+        "guideCount": 0,
+        "skillTemplateCount": 0,
+        "runnableSkillCount": 0,
+        "lastActivityAt": "2026-04-25T01:00:00+08:00"
+      },
+      "questions": [],
+      "artifacts": [
+        {
+          "type": "note",
+          "path": "notes/auth-strategy.md",
+          "createdAt": "2026-04-25T01:00:00+08:00"
+        },
+        {
+          "type": "cheatsheet",
+          "path": "explorer/cheatsheet/auth-strategy-cheat-sheet.md",
+          "createdAt": "2026-04-27T16:30:00+08:00"
+        }
+      ],
+      "skillPackaging": {
+        "hasSkillTemplate": false,
+        "hasRunnableSkill": false
+      }
+    },
+    {
+      "id": "dom-snapshot-element-tagging",
+      "name": "DOM 快照与元素打标",
+      "category": "browser",
+      "tags": ["dom", "snapshot", "tagging"],
+      "state": "active",
+      "progress": {
+        "questionCount": 1,
+        "noteCount": 1,
+        "guideCount": 0,
+        "skillTemplateCount": 0,
+        "runnableSkillCount": 0,
+        "lastActivityAt": "2026-04-25T01:00:00+08:00"
+      },
+      "questions": [],
+      "artifacts": [
+        {
+          "type": "note",
+          "path": "notes/dom-snapshot-element-tagging.md",
+          "createdAt": "2026-04-25T01:00:00+08:00"
+        }
+      ],
+      "skillPackaging": {
+        "hasSkillTemplate": false,
+        "hasRunnableSkill": false
+      }
     }
   ],
-  "guide": "explorer/opencli-guide.md",
+  "guide": "explorer/02-opencli-guide.md",
   "timestamps": {
     "createdAt": "2026-04-20T00:30:00+08:00",
-    "lastUpdated": "2026-04-27T12:00:00+08:00"
+    "lastUpdated": "2026-04-27T16:00:00+08:00"
   }
 }

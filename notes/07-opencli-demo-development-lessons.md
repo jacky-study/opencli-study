@@ -1,13 +1,11 @@
 ---
 article_id: OBA-xpscm86y
-article_id: OBA-0eso18jc
 tags: [opencli, 开发经验, Demo, Node.js, 模板字符串, 进程通信]
 type: note
 updated_at: 2026-04-24
 created_at: 2026-04-24
 source: conversation
 ---
-article_id: OBA-xpscm86y
 
 # OpenCLI 最小化 Demo 开发经验总结
 
