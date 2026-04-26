@@ -132,9 +132,10 @@ AI Agent 根据 exit code 决定下一步：77 需要登录，75 可重试，66 
 
 ## 五、自动生成与验证（generate）
 
-核心文件：`src/generate-verified.ts`、`src/explore.ts`
+> **注意**：`generate` 命令在 v1.7.4 源码中存在（`src/generate-verified.ts`、`src/explore.ts`），
+> 但在 v1.7.7 及之后的正式发布版中已被移除。以下内容仅作为源码研究参考。
 
-`opencli generate <url>` 一键从网页生成 CLI 适配器：
+源码中的 generate 管道流程：
 
 ```
 ┌──────────┐    ┌───────────┐    ┌───────────┐    ┌──────────┐    ┌──────────┐

@@ -44,6 +44,10 @@ opencli-study/
 
 | 文件 | 主题 | 何时读取 |
 |------|------|----------|
+| 05-opencli-browser-bridge-mechanism.md | 浏览器桥接 + 自动化窗口 + CDP | 理解 browser open 背后行为、窗口创建机制、CDP 调试协议时 |
+| dom-snapshot-element-tagging.md | DOM 快照与元素打标机制 | 理解 OpenCLI 如何感知页面元素、data-opencli-ref 打标流程时 |
+| auth-strategy.md | OpenCLI 5 层认证策略 | 理解命令认证模式（public/cookie/header/intercept/ui）时 |
 | 06-browser-bridge-csp-troubleshooting.md | CSP 三层限制与排查 | 遇到 Chrome 扩展 CSP 限制时 |
 | 07-opencli-demo-development-lessons.md | Demo 开发经验与教训 | 需要参考开发调试经验时 |
+| 09-browser-commands-deep-dive.md | 浏览器命令完全指南（26 条命令实战） | 需要查 browser 命令用法、参数、输出示例时 |
 <!-- ob-index:end -->

@@ -3,7 +3,7 @@ article_id: OBA-hkwlo3qp
 title: OpenCLI 浏览器桥接机制 —— 从命令行到浏览器的完整链路
 tags: [opencli, browser-bridge, daemon, chrome-extension, cdp]
 created_at: 2026-04-24
-updated_at: 2026-04-24
+updated_at: 2026-04-25
 ---
 
 # OpenCLI 浏览器桥接机制
@@ -174,7 +174,89 @@ Chrome 安全策略限制，无法自动安装。手动步骤：
 5. 输出表格到终端
 ```
 
-## 八、参考资料
+## 八、自动化窗口行为详解
+
+### 为什么看不到浏览器窗口？
+
+执行 `opencli browser open https://36kr.com` 后，浏览器**确实**打开了一个新窗口，但默认不抢焦点。
+
+> [!code-ref] 自动化窗口创建逻辑
+> **仓库**: opencli | **路径**: `extension/src/background.ts:149-209`
+> 🔗 [GitHub](https://github.com/jackwener/opencli/blob/main/extension/src/background.ts#L149-L209)
+>
+> `windowFocused` 默认为 `false`，调用 `chrome.windows.create({ focused: false })` 时，macOS 上新窗口出现在当前应用后面，不会跳到前台。这是用户"看不到浏览器"的直接原因。
+
+### 为什么不能复用已有 Tab？
+
+OpenCLI **始终**调用 `chrome.windows.create()` 创建独立窗口，而非在用户已有窗口中新增 Tab（`chrome.tabs.create()`）。这是刻意的设计决策：
+
+| 原因 | 说明 |
+|------|------|
+| **隔离性** | 自动化操作不影响用户正在浏览的页面 |
+| **可清理** | 30 秒空闲自动关闭，不留残留 |
+| **安全性** | 防止误操作用户的真实 Tab |
+
+虽然是新窗口，但因为是**同一个 Chrome Profile**，Cookie、Session、登录状态天然共享。这才是 OpenCLI 用 Chrome 扩展方案的核心优势——不用重新登录。
+
+### 环境变量控制窗口行为
+
+```bash
+# 让自动化窗口在前台打开（抢焦点）
+export OPENCLI_WINDOW_FOCUSED=true
+opencli browser open https://36kr.com
+```
+
+> [!code-ref] windowFocused 读取与传递
+> **仓库**: opencli | **路径**: `src/browser/daemon-client.ts:146-148`
+> 🔗 [GitHub](https://github.com/jackwener/opencli/blob/main/src/browser/daemon-client.ts#L146-L148)
+>
+> CLI 进程读取 `OPENCLI_WINDOW_FOCUSED` 环境变量，值为 `1` 或 `true` 时，将其注入到发送给 Daemon 的命令中。Daemon 再转发给扩展，扩展据此决定 `chrome.windows.create` 的 `focused` 参数。
+
+### 验证自动化窗口存在
+
+- **macOS Dock**：Chrome 图标上的小白点表示有额外窗口
+- **Chrome 窗口菜单**：菜单栏「窗口」→ 底部列出所有窗口
+- **快捷键**：`Cmd + `` ` 在 Chrome 窗口间切换
+
+## 九、CDP 执行机制
+
+CDP（Chrome DevTools Protocol，Chrome 开发者工具协议）是 Chrome 内置的调试协议——按 F12 打开 DevTools 时，内部用的就是这套协议。
+
+Chrome 扩展通过 `chrome.debugger` API 使用 CDP：
+
+```
+chrome.debugger.attach(tabId, "1.3")                          // 附加到 Tab
+chrome.debugger.sendCommand(tabId, "Runtime.evaluate", {       // 执行 JS
+    expression: "fetch('https://api.xxx.com', { credentials: 'include' })"
+})
+```
+
+等价于在 DevTools Console 中手动输入代码，只是完全程序化。这是 OpenCLI 扩展执行 `evaluate` 步骤的底层机制。
+
+> [!code-ref] CDP 命令分发（exec action）
+> **仓库**: opencli | **路径**: `extension/src/background.ts` handleCommand → handleExec
+>
+> 扩展收到 `action: "exec"` 命令后，调用 `chrome.debugger.attach()` 附加到目标 Tab，再通过 `Runtime.evaluate` 执行 JS 代码。执行完毕后 detach debugger。
+
+## 十、浏览器实例 vs 窗口 vs Tab
+
+| 概念 | 类比 | 说明 |
+|------|------|------|
+| **浏览器实例** | 一个运行中的 Chrome 进程 | 双击 Chrome 图标 = 启动一个实例 |
+| **窗口** | 同一实例中的多个窗口 | `Cmd+N` 创建新窗口 |
+| **Tab** | 同一窗口中的多个标签页 | 同一窗口内切换 |
+
+同一实例共享 Cookie、Session、扩展。OpenCLI 在**同一实例**中创建新窗口，所以登录态天然继承。
+
+用 `--user-data-dir` 启动才是"新实例"——与日常 Chrome 完全隔离：
+
+```bash
+google-chrome --user-data-dir=/tmp/test-profile   # 新实例，无 Cookie/历史/扩展
+```
+
+---
+
+## 参考资料
 
 | 内容 | 文件路径 |
 |------|----------|
@@ -185,7 +267,10 @@ Chrome 安全策略限制，无法自动安装。手动步骤：
 | 命令声明 | `opencli/clis/bilibili/hot.js` |
 | 扩展后台脚本 | `opencli/extension/src/background.ts` |
 | 扩展配置 | `opencli/extension/manifest.json` |
+| Daemon 客户端（windowFocused） | `opencli/src/browser/daemon-client.ts` |
+| [Chrome DevTools Protocol 官方文档](https://chromedevtools.github.io/devtools-protocol/) | — |
+| [chrome.debugger API](https://developer.chrome.com/docs/extensions/reference/api/debugger) | — |
 
 ---
 
-*研究日期：2026-04-24*
+*研究日期：2026-04-24 ~ 2026-04-25*
