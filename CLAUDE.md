@@ -51,6 +51,7 @@ opencli-study/
 
 | 文件 | Article ID | 主题 |
 |------|-----------|------|
+| [all-commands-cheat-sheet.md](explorer/cheatsheet/all-commands-cheat-sheet.md) | OBA-cmd4l1st | 全站命令速查（100+ 站点、800+ 命令） |
 | [browser-commands-cheat-sheet.md](explorer/cheatsheet/browser-commands-cheat-sheet.md) | OBA-bcm4k7r2 | 26 条浏览器命令速查 |
 | [auth-strategy-cheat-sheet.md](explorer/cheatsheet/auth-strategy-cheat-sheet.md) | OBA-ast8m3v5 | 5 层认证策略速查 |
 | [architecture-cheat-sheet.md](explorer/cheatsheet/architecture-cheat-sheet.md) | OBA-arc6p9w1 | 核心架构速查 |
@@ -74,6 +75,10 @@ opencli-study/
 | [dom-snapshot-element-tagging.md](notes/dom-snapshot-element-tagging.md) | OBA-wj394cgy | DOM 快照与元素打标 |
 | [opencli-design-skill.md](notes/opencli-design-skill.md) | OBA-7l53aosl | 设计模式 Skill 模板 |
 | [opencli-guide.md](notes/opencli-guide.md) | OBA-azmrdfhz | 导读指南（notes 版） |
+| [render-aware-web-read.md](notes/render-aware-web-read.md) | OBA-wt3k7np2 | Render-Aware Web Read 渲染感知读取 |
+| [tab-leases-workspace.md](notes/tab-leases-workspace.md) | OBA-tl9k2mn4 | Tab Leases 与 Workspace 绑定机制 |
+| [skill-system-and-plugin-architecture.md](notes/skill-system-and-plugin-architecture.md) | OBA-sk7p3qw1 | Skill 系统与插件架构 |
+| [autoresearch-auto-improvement.md](notes/autoresearch-auto-improvement.md) | OBA-ar8x5kn2 | Autoresearch AI 驱动自动改进引擎 |
 
 <!-- ob-index:start -->
 ## Obsidian 知识库
@@ -89,4 +94,8 @@ opencli-study/
 | 06-browser-bridge-csp-troubleshooting.md | OBA-a3u0hadi | CSP 三层限制与排查 | 遇到 Chrome 扩展 CSP 限制时 |
 | 07-opencli-demo-development-lessons.md | OBA-xpscm86y | Demo 开发经验与教训 | 需要参考开发调试经验时 |
 | 09-browser-commands-deep-dive.md | OBA-ub43lfgf | 浏览器命令完全指南（26 条命令实战） | 需要查 browser 命令用法、参数、输出示例时 |
+| render-aware-web-read.md | OBA-wt3k7np2 | 渲染感知网页读取（DOM 稳定 + 网络空闲 + iframe 合并） | 理解 web read 如何处理动态网页、等待渲染完成、合并 iframe 时 |
+| tab-leases-workspace.md | OBA-tl9k2mn4 | Tab Leases 标签页生命周期管理（workspace 绑定 + 资源池化） | 理解浏览器 tab 创建→绑定→使用→释放流程、owned/borrowed 模式时 |
+| skill-system-and-plugin-architecture.md | OBA-sk7p3qw1 | Skill 系统与插件架构（Skill vs Adapter + Pipeline + 注册系统） | 理解 Skill 安装运行、Pipeline 声明式编程、Strategy 枚举、插件发现加载时 |
+| autoresearch-auto-improvement.md | OBA-ar8x5kn2 | Autoresearch 自动改进引擎（8 阶段循环 + 4 层测试） | 理解 AI 驱动的自动代码改进、科学方法论实践、质量保障体系时 |
 <!-- ob-index:end -->

@@ -15,7 +15,7 @@
     "githubUrl": "https://github.com/jackwener/opencli",
     "owner": "jackwener",
     "branch": "main",
-    "commitSha": "54ffc882837e01acddb710b8dee69825cc442a64"
+    "commitSha": "c86b6826a41226818f15e9547f6ebb881aa66ba9"
   },
   "topics": [
     {
@@ -366,11 +366,119 @@
         "hasSkillTemplate": false,
         "hasRunnableSkill": false
       }
+    },
+    {
+      "id": "render-aware-web-read",
+      "name": "Render-Aware Web Read 渲染感知读取",
+      "category": "browser",
+      "tags": ["browser", "web-read", "render-aware", "cdp"],
+      "state": "active",
+      "progress": {
+        "questionCount": 0,
+        "noteCount": 1,
+        "guideCount": 0,
+        "skillTemplateCount": 0,
+        "runnableSkillCount": 0,
+        "lastActivityAt": "2026-04-29T22:40:00+08:00"
+      },
+      "questions": [],
+      "artifacts": [
+        {
+          "type": "note",
+          "path": "notes/render-aware-web-read.md",
+          "createdAt": "2026-04-29T22:40:00+08:00"
+        }
+      ],
+      "skillPackaging": {
+        "hasSkillTemplate": false,
+        "hasRunnableSkill": false
+      }
+    },
+    {
+      "id": "tab-leases-workspace",
+      "name": "Tab Leases 与 Workspace 绑定",
+      "category": "browser",
+      "tags": ["browser", "tab-lease", "workspace", "cdp"],
+      "state": "active",
+      "progress": {
+        "questionCount": 0,
+        "noteCount": 1,
+        "guideCount": 0,
+        "skillTemplateCount": 0,
+        "runnableSkillCount": 0,
+        "lastActivityAt": "2026-04-29T23:20:00+08:00"
+      },
+      "questions": [],
+      "artifacts": [
+        {
+          "type": "note",
+          "path": "notes/tab-leases-workspace.md",
+          "createdAt": "2026-04-29T23:20:00+08:00"
+        }
+      ],
+      "skillPackaging": {
+        "hasSkillTemplate": false,
+        "hasRunnableSkill": false
+      }
+    },
+    {
+      "id": "skill-system-plugin-architecture",
+      "name": "Skill 系统与插件架构",
+      "category": "architecture",
+      "tags": ["skill", "plugin", "architecture", "registry"],
+      "state": "active",
+      "progress": {
+        "questionCount": 0,
+        "noteCount": 1,
+        "guideCount": 0,
+        "skillTemplateCount": 0,
+        "runnableSkillCount": 0,
+        "lastActivityAt": "2026-04-29T23:20:00+08:00"
+      },
+      "questions": [],
+      "artifacts": [
+        {
+          "type": "note",
+          "path": "notes/skill-system-and-plugin-architecture.md",
+          "createdAt": "2026-04-29T23:20:00+08:00"
+        }
+      ],
+      "skillPackaging": {
+        "hasSkillTemplate": false,
+        "hasRunnableSkill": false
+      }
+    },
+    {
+      "id": "autoresearch-auto-improvement",
+      "name": "Autoresearch AI 驱动的自动改进引擎",
+      "category": "automation",
+      "tags": ["autoresearch", "automation", "testing", "ai-agent"],
+      "state": "active",
+      "progress": {
+        "questionCount": 0,
+        "noteCount": 1,
+        "guideCount": 0,
+        "skillTemplateCount": 0,
+        "runnableSkillCount": 0,
+        "lastActivityAt": "2026-04-29T23:20:00+08:00"
+      },
+      "questions": [],
+      "artifacts": [
+        {
+          "type": "note",
+          "path": "notes/autoresearch-auto-improvement.md",
+          "createdAt": "2026-04-29T23:20:00+08:00"
+        }
+      ],
+      "skillPackaging": {
+        "hasSkillTemplate": false,
+        "hasRunnableSkill": false
+      }
     }
   ],
   "guide": "explorer/02-opencli-guide.md",
   "timestamps": {
     "createdAt": "2026-04-20T00:30:00+08:00",
-    "lastUpdated": "2026-04-27T16:00:00+08:00"
+    "lastUpdated": "2026-04-29T23:20:00+08:00"
   }
 }

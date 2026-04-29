@@ -209,6 +209,18 @@ updated_at: 2026-04-27
 ## OBA-qxq1fy8v
 <!-- explorer/02-opencli-guide.md -->
 
+## OBA-wt3k7np2
+<!-- notes/render-aware-web-read.md -->
+
+## OBA-tl9k2mn4
+<!-- notes/tab-leases-workspace.md -->
+
+## OBA-sk7p3qw1
+<!-- notes/skill-system-and-plugin-architecture.md -->
+
+## OBA-ar8x5kn2
+<!-- notes/autoresearch-auto-improvement.md -->
+
 
 
 
